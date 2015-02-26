@@ -1,0 +1,17 @@
+elfpack
+
+	$ cat manifest.yml 
+	---
+	applications:
+	- name: app
+	  memory: 256M
+	  instances: 1
+	  host: somehost1
+	  path: .
+	  env:
+	     CLIENT_ID: "app"
+	
+	
+	$ cat Procfile 
+	web: ./app
+

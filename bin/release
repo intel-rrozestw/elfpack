@@ -1,11 +1,12 @@
 #!/bin/bash
 
+# CF passes full path to this script as a first argument:
 path=$1
 
 cat <<EOF
 ---
 config_vars:
-  RACK_ENV: production
+  BUILDPACK: elfpack
 default_process_types:
-  web: $1/./app
+  web: $path/./app
 EOF
