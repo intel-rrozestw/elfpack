@@ -29,3 +29,6 @@ elfpack - minimal CloudFoundry BuildPack for running plain executables
 	$ cat Procfile 
 	web: ./app
 
+#### deploy:
+
+	cf push app -b https://github.com/intel-rrozestw/elfpack.git
