@@ -1,4 +1,17 @@
-elfpack
+elfpack - minimal CloudFoundry BuildPack for running plain executables 
+
+
+#### name executable file "app":
+
+	$ cp ../some-static-executable ./app
+
+        ###################
+
+	Note: App has to listen on port number passed in an PORT env variable!
+	
+	###################
+
+#### prepare manifest.yml:
 
 	$ cat manifest.yml 
 	---
@@ -11,7 +24,8 @@ elfpack
 	  env:
 	     CLIENT_ID: "app"
 	
-	
+#### prepare Procfile:
+
 	$ cat Procfile 
 	web: ./app
 
