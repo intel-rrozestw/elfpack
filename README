@@ -7,7 +7,7 @@ elfpack - minimal CloudFoundry BuildPack for running plain executables
 
         ###################
 
-	Note: App has to listen on port number passed in an PORT env variable!
+	Note: App has to listen on port number passed as 'PORT' env variable!
 	
 	###################
 
